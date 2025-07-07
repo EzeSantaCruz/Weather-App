@@ -22,7 +22,8 @@ const useWeatherApi = () => {
 
                 ciudades.map(async ciudad => {
                     
-                    const url = `${baseUrl}?latitude=${ciudad.lat}&longitude=${ciudad.lon}&current_weather=true` //"https://api.open-meteo.com/v1/forecast?latitude=-34.6&longitude=-58.4&current_weather=true" // pasarlo al env
+                    const url = `${baseUrl}?latitude=${ciudad.lat}&longitude=${ciudad.lon}&current_weather=true` 
+                    
                     const response = await fetch(url)
                     if(!response.ok)
                     {
