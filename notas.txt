@@ -1,0 +1,33 @@
+async function buscarClima() {
+  const ciudad = document.getElementById("city").value;
+  const resultado = document.getElementById("result");
+  resultado.innerHTML = "Buscando coordenadas...";
+
+  try {
+    // Paso 1: Obtener coordenadas con Nominatim
+    const responseGeo = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(ciudad)}`);
+    const dataGeo = await responseGeo.json();
+
+    if (dataGeo.length === 0) {
+      resultado.innerHTML = "Ciudad no encontrada.";
+      return;
+    }
+
+    const { lat, lon, display_name } = dataGeo[0];
+
+    // Paso 2: Obtener clima con Open-Meteo
+    const responseWeather = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
+    const dataWeather = await responseWeather.json();
+
+    const weather = dataWeather.current_weather;
+
+    resultado.innerHTML = `
+      <h2>Clima en ${display_name}</h2>
+      <p>🌡️ Temperatura: ${weather.temperature}°C</p>
+      <p>💨 Viento: ${weather.windspeed} km/h</p>
+    `;
+  } catch (err) {
+    resultado.innerHTML = "Error al obtener el clima.";
+    console.error(err);
+  }
+}
