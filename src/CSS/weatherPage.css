@@ -1,0 +1,11 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

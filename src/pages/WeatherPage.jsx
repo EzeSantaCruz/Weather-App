@@ -2,6 +2,8 @@
 import useWeatherApi from '../hooks/useWeatherApi'
 import Weathers from '../components/Weathers'
 import NavBar from '../components/NavBar'
+import '../CSS/weatherPage.css'
+import Footer from '../components/footer'
 function WeatherPage() {
 
 const {err,weather,loading} = useWeatherApi()
@@ -31,8 +33,9 @@ const {err,weather,loading} = useWeatherApi()
         <main>
             <Weathers weathers={weather}/>
         </main>
+        
         <footer>
-            
+            <Footer />
         </footer>
         </>
     )
