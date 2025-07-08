@@ -6,6 +6,11 @@ main{
 
 footer{
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
+}
+.title{
+    margin-bottom: 2%;
+    border: 2px solid #3384db;
+    padding: 2%;
+    border-radius: 20px;
 }

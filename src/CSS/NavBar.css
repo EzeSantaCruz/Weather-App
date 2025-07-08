@@ -1,4 +1,33 @@
 .navbar{
-    border-radius: 0 0 10px 10px;
-    margin: 0.5% 10% 1%;
+    width: 100%;
+    background-color: #3384db ;
+}
+.title-Nav-Bar{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    
+}
+.btn-navBar{
+    border: 2px solid white;
+    background-color: #3384db;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+.btn-navBar:hover{
+    color: black;
+    background-color: white;
+}
+
+.Link-NavBar{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.container-links{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
 }

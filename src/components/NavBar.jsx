@@ -1,20 +1,24 @@
 import React from 'react'
 
 import '../CSS/NavBar.css'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand"><span>Weather-App</span></a>
-                <form class="d-flex" role="search" onSubmit={console.log("Hola")}>
+                <div className='container-links'>
+                    <Link to="/" className='title-Nav-Bar'>Weather-App</Link>
+                    <Link to="/marine" className='Link-NavBar'>Mares</Link>
+                </div>
+                <form class="d-flex" role="search">
                     <input
                         class="form-control me-2"
                         type="search"
                         placeholder="Buscar"
                         aria-label="Buscar"
                     />
-                    <button class="btn btn-outline-success" type="submit">
+                    <button class="btn-navBar" type="submit">
                     Buscar
                     </button>
                 </form>
