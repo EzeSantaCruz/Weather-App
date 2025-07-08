@@ -46,28 +46,6 @@ const useWeatherApi = () => {
         }finally{
             setLoading(false)
         }
-        
-
-        // try
-        // {
-        //     const response = await fetch()
-
-        //     if(!response.ok)
-        //     {
-        //         throw new Error(`Error al realizar la consulta HTTP: ${response.status}`)
-        //     }else{
-        //         const data = await response.json()
-        //         setWeather(data.current_weather)//current weather, objeto que tiene los datos necesarios para mostrar.
-        //     }
-        // }
-        // catch(error)
-        // {
-        //     setError(error)
-        //     setWeather(null)
-        // }finally{
-        //     setLoading(false)
-        // }
-
     }
     
 

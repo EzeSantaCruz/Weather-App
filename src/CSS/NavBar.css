@@ -1,12 +1,12 @@
 .navbar{
     width: 100%;
-    background-color: #3384db ;
+    background-color: #3384db;
 }
 .title-Nav-Bar{
     font-size: 30px;
     color: white;
     text-decoration: none;
-    
+    margin-left: 380px;
 }
 .btn-navBar{
     border: 2px solid white;
@@ -14,6 +14,7 @@
     border-radius: 10px;
     color: white;
     padding: 10px;
+    margin-right: 380px;
 }
 .btn-navBar:hover{
     color: black;
