@@ -27,6 +27,9 @@ function Weathers({weathers}) {
             <p className="card-text">
                 💨Viento : {ciudad.clima.windspeed} km/h
             </p>
+            <p className='card-text'>
+                🗓Fecha y Horario: {ciudad.clima.time}
+            </p>
             </div>
         </div>
         );

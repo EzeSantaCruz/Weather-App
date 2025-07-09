@@ -12,7 +12,6 @@ function MarinePage() {
     if(loading){
         return (
             <>
-            <NavBar />
                 Cargando Climas...
             </>
         )
@@ -22,7 +21,6 @@ function MarinePage() {
         if(err){
         return (
             <>
-            <NavBar />
             <h2>Error al cargar los datos</h2>
             <p> {err.message} </p>
             </>
@@ -31,19 +29,15 @@ function MarinePage() {
 
 return (
         <>
-        <header>
-            <NavBar />
-        </header>
+        
 
         <main>
-            <h1>Clima, Oleaje, altura y demas</h1>
+            <h1>Aqui podras consultar oleaje, temperatura del mar y altura de las olas.</h1>
             {console.log(weather)}
             <Weathers weathers={weather}/>
         </main>
         
-        <footer>
-            <Footer />
-        </footer>
+
         </>
     )
 }

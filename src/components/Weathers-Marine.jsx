@@ -22,10 +22,10 @@ function Weathers({weathers}) {
             <div className="card-body">
             <h5 className="card-title">{ciudad.nombre}</h5>
             <h6 className="card-subtitle mb-2 text-body-secondary">
-                🌡️Altura de las Olas: {ciudad.clima.wave_height}
+                🌊Altura de las Olas: {ciudad.clima.wave_height[0]}
             </h6>
             <p className="card-text">
-                💨temperatura del Mar: {ciudad.clima.sea_surface_temperature}
+                🌡️temperatura del Mar: {ciudad.clima.sea_surface_temperature[0]}
             </p>
             </div>
         </div>
