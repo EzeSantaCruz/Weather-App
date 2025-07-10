@@ -7,6 +7,7 @@ import WeatherPage from './pages/WeatherPage.jsx'
 import MarinePage from './pages/MarinePage.jsx'
 
 
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -24,9 +25,6 @@ const router = createBrowserRouter([
     ]
   }
 ])
-
-
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

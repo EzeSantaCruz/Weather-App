@@ -1,7 +1,5 @@
-import React from 'react'
-
 import '../CSS/NavBar.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function NavBar() {
     return (
@@ -19,7 +17,7 @@ function NavBar() {
                         aria-label="Buscar"
                     />
                     <button class="btn-navBar" type="submit">
-                    Buscar
+                        <Link to="/" className='link'>Buscar</Link>
                     </button>
                 </form>
             </div>

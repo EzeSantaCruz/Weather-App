@@ -16,9 +16,10 @@
     padding: 10px;
     margin-right: 380px;
 }
-.btn-navBar:hover{
-    color: black;
+.btn-navBar:hover,
+.btn-navBar:hover .link{
     background-color: white;
+    color: black;
 }
 
 .Link-NavBar{
@@ -31,4 +32,9 @@
     display: flex;
     gap: 20px;
     align-items: baseline;
+}
+
+.link{
+    text-decoration: None;
+    color: white;
 }
