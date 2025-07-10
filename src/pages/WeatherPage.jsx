@@ -12,7 +12,7 @@ const {err,weather,loading} = useWeatherApi()
     if(loading){
         return (
             <>
-                Cargando Climas...
+                Cargando Pagina, Espere Por Favor...
             </>
         )
     }

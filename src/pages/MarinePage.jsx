@@ -12,7 +12,7 @@ function MarinePage() {
     if(loading){
         return (
             <>
-                Cargando Climas...
+                Cargando Pagina, Espere Por Favor...
             </>
         )
     }
